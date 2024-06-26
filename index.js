@@ -107,8 +107,8 @@ function createEmployeeRecord(array) {
         
 function calculatePayroll(array) {
     let totalPayroll = 0;
-    array.forEach(() => {
-        totalPayroll += allWagesFor.call()
+    array.forEach((name) => {
+        totalPayroll += allWagesFor.call(name)
     });
     return totalPayroll;
 }
